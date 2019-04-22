@@ -143,7 +143,7 @@ public class WAVCat: NSObject {
 
     :returns: Playable Data
     */
-    final func getData() -> Data{
+    public final func getData() -> Data{
         var temp = Data()
 
         temp.append(&headerBytes, count: headerBytes.count)
