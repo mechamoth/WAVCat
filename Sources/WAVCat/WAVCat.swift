@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Darwin
 
 struct Header {
     var channels:Int
