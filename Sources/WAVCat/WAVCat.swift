@@ -22,7 +22,7 @@ public class WAVCat: NSObject {
     private var headerBytes:[UInt8]
     private var headerInfo:Header?
 
-    override init(){
+    public override init(){
         self.contentData = Data()
         self.headerBytes = []
         super.init()
@@ -34,7 +34,7 @@ public class WAVCat: NSObject {
 
     :param: initialData Data with contents of wav file
     */
-    convenience init(_ data:Data) {
+    public convenience init(_ data:Data) {
         self.init()
         self.initialData = data;
         if let header = self.validate(data){
