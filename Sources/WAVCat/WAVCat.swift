@@ -15,7 +15,7 @@ struct Header {
     var dataSize:Int
 }
 
-class WAVCat: NSObject {
+public class WAVCat: NSObject {
 
     private var contentData:Data
     private var initialData:Data?
